@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = (process.env.PORT || 3000);
+const port = (process.env.PORT || 3000);
 var path = require('path');
 var router = express.Router();  
 var session = require('express-session')
@@ -301,4 +301,4 @@ function viewReview(request, response) {
 /// ***************** ***************** *****************
 /// ***************** ***************** *****************
 /// ***************** ***************** *****************
-app.listen(PORT, () => console.log(`\n\tWeb app listening at http://localhost:${PORT}`));
+app.listen(port, () => console.log(`\n\tWeb app listening at http://localhost:${port}`));
